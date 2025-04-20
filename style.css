@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #87CEFA;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+/* กล่องพื้นหลัง */
+.locker-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ล็อกเกอร์แต่ละบาน */
+.locker {
+  flex: 1;
+  border: 2px solid #65b2e8;
+  margin: 0 2px;
+  background-color: #87CEFA;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ช่องระบายอากาศ */
+.vent {
+  width: 60%;
+  height: 6px;
+  background: #65b2e8;
+  border-radius: 3px;
+  margin: 6px 0;
+}
+
+/* ป้ายหมายเลข */
+.label {
+  position: absolute;
+  top: 20px;
+  width: 60px;
+  height: 30px;
+  background: white;
+  border: 3px solid #65b2e8;
+  color: #3498db;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+/* รูปภาพสติกเกอร์ */
+.sticker {
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+.star {
+  width: 7%;
+  top: 16%;
+  right: 20%;
+}
+
+.apple {
+  width: 7%;
+  bottom: 12%;
+  left: 20%;
+}
+
+.logo {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 23%;
+}
+
+ .container {
+      background-color: #FFEAF1;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 300px;
+      width: 100%;
+ 
+    }
+
+    h2 {
+      color: #FF7BA9;
+      margin-bottom: 20px;
+    }
+
+
+    h3 {
+      color: #FF7BA9;
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #FFC1D6;
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #FFB3C6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff94af;
+    }
+
+    #statusResult {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+.container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFEAF1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 10;
+}
+
+@font-face {
+  font-family: 'MyCuteFont';
+  src: url('https://files.catbox.moe/t6loa1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyCuteFont', sans-serif;
+}
+
+#statusResult {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: white;
+  color: #c2185b;
+  font-size: 18px;
+  border: 2px dashed #f06292;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #f8bbd0;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: pop-in 0.5s ease-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
